@@ -1,0 +1,138 @@
+a,
+a:hover {
+  text-decoration: none;
+}
+
+a:link {
+  color: #532F8C;
+}
+
+a:visited {
+  color: #532F8C;
+}
+
+a:hover {
+  color: #E2BAAC;
+}
+
+a:active {
+  color: #532F8C;
+}
+
+.main-logo {
+  width: 30%;
+  max-width: 35vw;
+  min-height: calc(35vw);
+  text-align: center;
+}
+
+.main-logo img {
+  object-fit: contain;
+}
+
+.content {
+  text-align: center;
+  width: 100%;
+}
+
+.social-icons {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.Titles {
+  font-size: 40px;
+  line-height: 45px;
+
+  color: #532f8c;
+  margin-top: 7px;
+
+  margin-bottom: 10px;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 691px) {
+
+  .main-logo {
+    width: 40%;
+  }
+
+  .Titles {
+    font-size: 27px;
+    line-height: 27px;
+    color: #532F8C;
+    font-weight: 500;
+    padding-top: 3px;
+  }
+}
+
+
+.Subtitles {
+  font-size: 26px;
+  color: #7E7E7E;
+  margin-top: -10px;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 991px) {
+
+  .Subtitles {
+    font-size: 17px;
+    color: #6B6B6B;
+    margin-top: -5px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+}
+
+
+.CellBackground {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 23px);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 4%;
+  background-image: linear-gradient(177deg, #f4f4f4 0.26%, #eaeaea 62.69%);
+  padding-right: 4%;
+  overflow-y: auto;
+  box-shadow: inset 0px -1px 12px rgba(230, 230, 230, 0.88);
+  border-top: 1px solid white;
+}
+
+.Copyright {
+  height: 23px;
+  font-size: 14px;
+  line-height: 23px;
+  color: #989898;
+  padding-right: 25px;
+  text-align: center;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+
+@media only screen and (orientation: landscape) {
+  .CellBackground {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-logo {
+    max-height: 40vh;
+  }
+  .content {
+    width: 50%;
+  }
+}
